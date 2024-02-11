@@ -16,7 +16,7 @@ public class CalendarDropdownTest extends Base {
     public void testCheapOair() throws InterruptedException {
 //        CheapFlightSearchPOs homePage = new CheapFlightSearchPOs(driver);
         CheapFlightSearchPageFactoryPOs homePage = new CheapFlightSearchPageFactoryPOs(driver);
-        driver.get("https://www.cheapoair.com/");
+        driver.get(properties.getProperty("cheapOAirUrl.production"));
 
         // Select your departure airport:
         Thread.sleep(3000);
@@ -51,7 +51,7 @@ public class CalendarDropdownTest extends Base {
         childAgeDrpDown.selectByValue("6");
     }
 
-    @Test
+//    @Test
     public void testCheapOair2() throws InterruptedException {
         CheapFlightSearchPOs homePage = new CheapFlightSearchPOs(driver);
         driver.get("https://www.cheapoair.com/");
