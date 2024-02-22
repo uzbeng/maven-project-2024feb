@@ -19,6 +19,7 @@
     <testng.version>7.9.0</testng.version>
     <selenium.version>4.17.0</selenium.version>
     <apache.poi.version>5.2.2</apache.poi.version>
+    <cucumber.version>7.14.0</cucumber.version>
   </properties>
 
   <dependencies>
@@ -40,6 +41,13 @@
 <!--      <version>4.11</version>-->
 <!--      <scope>test</scope>-->
 <!--    </dependency>-->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.10.0</version>
+      <scope>test</scope>
+    </dependency>
+
 
     <dependency>
       <groupId>org.apache.poi</groupId>
@@ -51,6 +59,33 @@
       <artifactId>poi</artifactId>
       <version>${apache.poi.version}</version>
     </dependency>
+
+<!--    <dependency>-->
+<!--      <groupId>com.squareup.sqldelight</groupId>-->
+<!--      <artifactId>sqlite-driver</artifactId>-->
+<!--      <version>1.5.5</version>-->
+<!--      <scope>runtime</scope>-->
+<!--    </dependency>-->
+
+    <dependency>
+      <groupId>app.cash.sqldelight</groupId>
+      <artifactId>sqlite-driver</artifactId>
+      <version>2.0.1</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>${cucumber.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>${cucumber.version}</version>
+      <scope>test</scope>
+    </dependency>
+
 
   </dependencies>
 
