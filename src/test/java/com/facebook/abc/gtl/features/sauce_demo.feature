@@ -1,3 +1,4 @@
+@Junit
 Feature: Login feature to Sauce Labs application
 
   Scenario: Test login with valid credentials

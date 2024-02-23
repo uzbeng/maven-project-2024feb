@@ -7,9 +7,11 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/java/com/facebook/abc/gtl/features/sauce_demo.feature",
-        glue = "com/facebook/abc/gtl/step_definitions",
-        dryRun = false
+        features = "src/test/java/com/facebook/abc/gtl/features",
+        glue = {"com/facebook/abc/gtl/step_definitions", "com/facebook/abc/gtl/hooks"},
+        dryRun = false,
+        tags = "not @Step",
+        plugin = {"html:target/test-output.html", "json:target/test-output.json", "junit:target/test-output.xml"}
 )
 public class JunitRunner {
 }
