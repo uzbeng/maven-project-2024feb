@@ -1,18 +1,22 @@
 package com.facebook.abc.gtl.step_definitions;
 
+import com.facebook.abc.gtl.util.DriverManager;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 
 public class PredefinedJavaSteps {
 
     @Given("^User is running given$")
     public void user_is_running_given() {
         System.out.println("User is running given");
+        DriverManager.getInstance().getDriver().findElement(By.xpath("sfdsfds")).click();
     }
 
     @When("This is when part")
     public void this_is_when_part() {
         System.out.println("This is when part");
+        DriverManager.getInstance().getDriver().findElement(By.xpath("sfdsfds")).sendKeys("some value");
     }
 
     @Then("This is then part")

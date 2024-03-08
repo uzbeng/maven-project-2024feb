@@ -1,0 +1,16 @@
+{
+  "pageName": "HomePage",
+  "objects": [
+    {
+      "elementName": "LoginButton",
+      "locatorType": "xpath",
+      "locator": "//*[@id='login']",
+      "navigateTo": "./HomePage.json"
+    },
+    {
+      "elementName": "LoginButton",
+      "locatorType": "xpath",
+      "locator": "//*[@id='login']"
+    }
+  ]
+}

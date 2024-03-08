@@ -1,0 +1,19 @@
+{
+  "pageName": "LoginPage",
+  "applicationName": "Facebook",
+  "applicationUrl": "http://www.facebook.com",
+
+  "objects": [
+    {
+      "elementName": "LoginButton",
+      "locatorType": "xpath",
+      "locator": "//*[@id='login']",
+      "navigateTo": "./HomePage.json"
+    },
+    {
+      "elementName": "UsernameBox",
+      "locatorType": "xpath",
+      "locator": "//*[@id='login']"
+    }
+  ]
+}

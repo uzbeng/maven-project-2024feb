@@ -1,5 +1,6 @@
 package com.facebook.abc.gtl.hooks;
 
+import com.facebook.abc.gtl.util.DriverManager;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.BeforeStep;
@@ -24,5 +25,6 @@ public class CucumberHooks {
     @After
     public void after() {
         System.out.println("This is after hook");
+        DriverManager.getInstance().tearDown();
     }
 }
