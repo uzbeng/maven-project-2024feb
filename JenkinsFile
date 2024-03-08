@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout code from Git repository
+                git branch: 'main', url: 'https://github.com/uzbeng/maven-project-2024feb.git'
+            }
+        }
+        stage('Demo1') {
+            steps {
+                // Run Maven clean and test commands
+                echo "Stage Demo1"
+                sh 'sleep 5s'
+            }
+        }
+        stage('Demo2') {
+            steps {
+                echo "Stage Demo2"
+                sh 'sleep 5s'
+            }
+        }
+        stage('Build and Test') {
+            steps {
+                // Run Maven clean and test commands
+                sh 'mvn clean test'
+            }
+        }
+    }
+}
